@@ -1,5 +1,7 @@
 # Hello Vision（v0.1）
 
+![CI](https://github.com/futurefarer/defect-inspect-hmi/actions/workflows/ci.yml/badge.svg)
+
 > 目标：用约 70 行代码走通「读图 → 灰度 → 二值化」这条工业视觉最基础的链路。
 
 ## 一、前置条件
@@ -69,3 +71,14 @@ make -j
 - [ ] 完成三个实验，并写下 5 行记录
 
 > 完成后进入下一步：用 Qt 做一个窗口，把结果显示在界面里。
+
+## 七、开发流程（企业协作）
+
+1. 每个任务对应一个 GitHub Issue
+2. 从 `main` 拉分支：`git switch -c feature/xxx`
+3. 本地开发并自测
+4. 提交：`git add -A && git commit -m "feat: ..."`
+5. 推送：`git push -u origin feature/xxx`
+6. 在 GitHub 开 Pull Request
+7. CI 通过 + Review 通过后合并
+
